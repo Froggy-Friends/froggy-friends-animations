@@ -17,7 +17,13 @@ export default function Home() {
   }
 
   return (
-    <Stack>
+    <Stack height='100%' width='100%' 
+      sx={{
+        backgroundImage: `url(${type})`, 
+        backgroundSize: 'contain', 
+        backgroundRepeat: 'no-repeat', 
+        backgroundPosition: 'center'
+      }}>
       <Stack direction='row' justifyContent='center'>
         <IconButton size='large' onClick={() => setType(frog2dUrl)}>
           <Avatar src={frog2dUrl} sx={{border: getBorder(frog2dUrl), height: 50, width: 50}}/>
@@ -29,7 +35,6 @@ export default function Home() {
           <Avatar src={frogPixelUrl} sx={{border: getBorder(frogPixelUrl), height: 50, width: 50}}/>
         </IconButton>
       </Stack>
-      <img src={type}/>
     </Stack>
   )
 }
