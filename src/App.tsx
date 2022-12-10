@@ -1,8 +1,7 @@
-import React from 'react';
 import { CssBaseline, ThemeProvider } from '@mui/material';
-import theme from './theme';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import theme from './theme';
 
 function App() {
   return (
@@ -10,7 +9,7 @@ function App() {
       <CssBaseline/>
       <BrowserRouter>
         <Routes>
-          <Route path='' element={<Home/>}/>
+          <Route path='/:cid2d/:cid3d/:cidPixel' element={<Home/>}/>
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
