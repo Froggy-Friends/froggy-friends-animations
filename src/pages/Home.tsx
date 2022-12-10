@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 
 export default function Home() {
   const theme = useTheme();
-  const baseUrl = 'https://froggyfriends.mypinata.cloud/ipfs';
+  const baseUrl = `${process.env.REACT_APP_BASE_URL}`;
   const { cid2d, cid3d, cidPixel } = useParams();
   const frog2dUrl = `${baseUrl}/${cid2d}`;
   const frog3dUrl = `${baseUrl}/${cid3d}`;
