@@ -13,7 +13,7 @@ export default function Home() {
   const [type, setType] = useState<string>(frog2dUrl);
 
   const getBorder = (url: string) => {
-    return url === type ? `3px solid ${theme.palette.primary.main}` : 'none'
+    return url === type ? `2px solid black` : '2px solid white'
   }
 
   return (
@@ -25,7 +25,7 @@ export default function Home() {
         backgroundPosition: 'center'
       }}>
       <Stack direction='row' justifyContent='center'>
-        <IconButton size='large' onClick={() => setType(frog2dUrl)}>
+        <IconButton onClick={() => setType(frog2dUrl)}>
           <Avatar src={frog2dUrl} sx={{border: getBorder(frog2dUrl), height: 50, width: 50}}/>
         </IconButton>
         <IconButton onClick={() => setType(frog3dUrl)}>
