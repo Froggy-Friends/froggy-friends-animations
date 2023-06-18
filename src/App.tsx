@@ -9,7 +9,7 @@ function App() {
       <CssBaseline/>
       <BrowserRouter>
         <Routes>
-          <Route path='/:cid2d/:cid3d/:cidPixel' element={<Home/>}/>
+          <Route path='/:frogId' element={<Home/>}/>
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
