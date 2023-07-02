@@ -9,7 +9,7 @@ export default function Home() {
   const frogPixelUrl = `${baseUrl}/${cidPixel}`;
 
   return (
-    <Carousel autoPlay>
+    <Carousel height={window.innerHeight}>
       <img src={frog2dUrl} height={'100%'} width={'100%'}/>
       <img src={frog3dUrl} height={'100%'} width={'100%'}/>
       <img src={frogPixelUrl} height={'100%'} width={'100%'}/>
